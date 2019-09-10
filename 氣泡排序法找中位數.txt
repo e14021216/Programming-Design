@@ -1,0 +1,32 @@
+//float Mid(const float* arr, int num) {									//い计ㄧΑ
+//	int mid_position;
+//	float *temp_matrix = new float[num];									//承㎝matrix妓nonconst蝴皚
+//	for (int i = 0; i < num; i++)
+//		temp_matrix[i] = arr[i];
+//
+//	int lowest = 0;
+//	float temp = 0;								// ノ獁逼猭 穝逼穝蝴皚
+//	for (int j = 0; j < num - 1; j++) {
+//
+//		lowest = j;
+//		for (int i = j + 1; i < num; i++) {
+//			if (temp_matrix[i] < temp_matrix[lowest])
+//			{
+//				temp = temp_matrix[i];
+//				temp_matrix[i] = temp_matrix[lowest];
+//				temp_matrix[lowest] = temp;							//が传a[i]籔a[lowest]ぇ;
+//			}
+//		}
+//	}
+//
+//	if (num % 2) {													//璝计计秖计
+//		mid_position = (num - 1) / 2;
+//		return temp_matrix[mid_position];
+//	}
+//
+//
+//	else {															//璝计计秖案计
+//		mid_position = num / 2;
+//		return (temp_matrix[mid_position] + temp_matrix[mid_position - 1]) / 2;
+//	}
+//}
